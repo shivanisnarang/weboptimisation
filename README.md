@@ -2,7 +2,7 @@
 
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
--- To improve the pagespeed score, i have inlined the font and style css files and put the 'async' tag on Google analytics JS file and therefore reducing CRP to one. I used ImageMagick to compress the images "views/images/pizzeria.jpg" and "img/profilepic.jpg" and used Grunt tool and its plugins to minify all of the necessary files to reduce the amount of bytes that needed to be downloaded.
+-- To improve the pagespeed score, i have inlined the font and style css files and put the 'async' tag on Google analytics JS file and therefore reducing CRP to one. I used ImageMagick to compress the images "views/images/pizzeria.jpg" and "img/profilepic.jpg" and used Grunt tool and its plugins (grunt-contrib-uglify, grunt-contrib-cssmin, grunt-contrib-htmlmin) to minify all of the necessary files to reduce the amount of bytes that needed to be downloaded. I have used npm install command to save these plugins as dev dependencies in the package.json file.
 
 Website: https://shivanisnarang.github.io/weboptimisation/
 
